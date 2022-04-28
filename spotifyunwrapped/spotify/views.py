@@ -5,6 +5,8 @@ from requests import Request, post
 from rest_framework import status
 from rest_framework.response import Response
 
+# This API endpoint will return a url which will be used to
+# authenticate our application
 class AuthURL(APIView):
     def get(self, request, format=None):
         scopes = 'user-top-read'
